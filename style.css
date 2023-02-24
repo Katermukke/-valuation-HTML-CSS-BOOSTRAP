@@ -1,0 +1,141 @@
+* {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "";
+  src: url("font/") format("woff2"), url("font/") format("woff");
+}
+body {
+  font-family: "forum";
+  word-break: break-word;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(0.25turn, #d8d336, #80af5c, #106a31);
+}
+header h1, header p, header a {
+  color: #fff;
+}
+header span {
+  color: #456945;
+}
+
+.navBar {
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+.navBar .containerNavLeft {
+  width: 40%;
+  height: 100px;
+}
+.navBar .containerNavCenter {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBar .logo {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+.navBar .ulNavRight {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navBar .size {
+  width: 50%;
+  height: 100px;
+}
+
+/* Intro Content */
+.introContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+.baseline {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subtext {
+  margin-bottom: 30px;
+}
+
+.custom-btn {
+  width: 190px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-family: "Cabin-Regular";
+  text-transform: uppercase;
+}
+.custom-btn.btn-5 {
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: #fff;
+  background: linear-gradient(0deg, #fff 0%, #fff 100%);
+}
+.custom-btn.btn-5:hover {
+  color: #fed136;
+  background: transparent;
+  box-shadow: none;
+}
+.custom-btn.btn-5:hover:before, .custom-btn.btn-5:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+.custom-btn.btn-5:before, .custom-btn.btn-5:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #fed136;
+  box-shadow: -1px -1px 5px 0.3px;
+  transition: 400ms ease all;
+}
+.custom-btn.btn-5:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}/*# sourceMappingURL=style.css.map */
