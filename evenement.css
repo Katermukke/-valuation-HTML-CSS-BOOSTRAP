@@ -17,13 +17,14 @@ body {
 }
 
 header {
-  height: 100vh;
+  height: 150px;
   width: 100vw;
-  background: linear-gradient(0.25turn, #97d694, #90ba6f, #57b01c);
 }
 
 .navbar {
   background-color: #d4f7bd;
+  position: relative;
+  z-index: 10;
 }
 
 .row {
@@ -33,4 +34,197 @@ header {
 .logoFoodWaste {
   height: 70px;
   width: 70px;
+}
+
+.container-main {
+  height: auto;
+  width: 100vw;
+}
+
+.section-news {
+  height: auto;
+  margin-inline: 3rem;
+}
+
+.title-h2 {
+  width: 100px;
+  border-bottom-color: rgb(223, 234, 237);
+  border-bottom: 4px solid #000000;
+  border-top: 4px solid #000000;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+  margin-bottom: 0.6em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.card__news {
+  position: relative;
+  height: 400px;
+  padding: 1rem;
+  background: url("assets/img/salade_zero-waste.jpg") center/cover no-repeat;
+  border-radius: 0.6rem;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.card__news-content {
+  font-size: 10px;
+  border-radius: 0.6rem;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  color: #070b32;
+  min-height: 100px;
+  z-index: 2;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.card__news-content h3 {
+  font-size: 18px;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: auto;
+  grid-template-areas: "card1 card1" "card2 card2" "card3 card3";
+}
+
+.card__news:nth-child(1) {
+  grid-area: card1;
+}
+.card__news:nth-child(1) .card__news-content {
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+}
+
+.card__news:nth-child(2) {
+  grid-area: card2;
+  background: url("assets/img/ecologie.jpeg") center/cover no-repeat;
+}
+
+.card__news:nth-child(3) {
+  grid-area: card3;
+  background: url("assets/img/bureau.jpg") center/cover no-repeat;
+}
+
+.card__news:nth-child(2) .card__news-content,
+.card__news:nth-child(3) .card__news-content {
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+}
+
+.card__news:not(.card__news) {
+  font-size: 10px;
+  border-radius: 0px 0px 10px 10px;
+  width: 100vw;
+  height: 100px;
+  width: 92vw;
+  background-color: green;
+  padding: 3rem;
+}
+
+.gridTags {
+  margin-bottom: 30px;
+}
+
+footer {
+  height: 250px;
+  color: #fff;
+  background-color: #070b32;
+  padding-top: 40px;
+  margin-top: 80px;
+}
+
+.zeroWasteFrance {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nousSuivre {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.newsletterFooter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 33%;
+}
+
+.zeroWasteFrance > p {
+  width: 200px;
+}
+
+.newsletterFooter > p {
+  width: 240px;
+}
+
+footer > div > h3 {
+  border-bottom-color: rgb(223, 234, 237);
+  border-bottom: 4px solid #dfeaed;
+  border-top: 4px solid;
+  display: inline-block;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+  margin-bottom: 0.6em;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.custom-btn {
+  width: 150px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Norms", sans-serif;
+  font-weight: 800;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.custom-btn.btn-15 {
+  background: #d4f7bd;
+  border: none;
+  z-index: 1;
+}
+.custom-btn.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #57b01c;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.custom-btn.btn-15:hover {
+  color: #fff;
+}
+.custom-btn.btn-15:hover:after {
+  left: 0;
+  width: 100%;
+}
+.custom-btn.btn-15:active {
+  top: 2px;
 }/*# sourceMappingURL=evenement.css.map */
