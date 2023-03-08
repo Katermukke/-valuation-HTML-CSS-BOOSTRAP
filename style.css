@@ -186,6 +186,7 @@ header {
   border-radius: 3px;
   padding: 3rem;
   grid-area: newContent;
+  margin-top: 40px;
 }
 
 .gridTags {
@@ -279,9 +280,52 @@ header {
 }
 
 footer {
-  height: 380px;
+  height: 250px;
   color: #fff;
   background-color: #070b32;
+  padding-top: 40px;
+}
+
+.zeroWasteFrance {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nousSuivre {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.newsletterFooter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 33%;
+}
+
+.zeroWasteFrance > p {
+  width: 200px;
+}
+
+.newsletterFooter > p {
+  width: 240px;
+}
+
+footer > div > h3 {
+  border-bottom-color: rgb(223, 234, 237);
+  border-bottom: 4px solid #dfeaed;
+  border-top: 4px solid;
+  display: inline-block;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+  margin-bottom: 0.6em;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 @media (max-width: 768px) {
@@ -327,5 +371,8 @@ footer {
   .gridTags {
     display: flex;
     flex-direction: column;
+  }
+  .section-news_content {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=style.css.map */
