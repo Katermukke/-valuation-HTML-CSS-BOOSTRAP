@@ -1,57 +1,200 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="script" href="#">
-    <title>ZeroWaste</title>
-</head>
-<body>
-<header>
-    <nav class="navbar navbar-dark">
-        <div class="containerNavLeft"></div>
-        <div class="containerNavCenter">
-        <a href="accueil"><img class="logo" src="img/foodWaste_logo.png" alt="logo Waste food"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="script.js"></script>
+    <title>Bootstrap c'est sympas mais ca reste de la merde</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md shadow p-3 mb-5 px-3">
+        <div class="row-md"></div>
+
+        <img
+          class="logoFoodWaste ps-1"
+          src="assets/img/foodWaste_logo.png"
+          alt="logo2"
+        />
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex align-items-center ms-auto ms-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Event</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="row px-5">
+            <button class="btn btn-outline-success" type="submit">
+              Donation
+            </button>
+          </div>
         </div>
-            <ul class="ulNavRight">
-                <li class="accueil"> <a href="#">Accueil</a></li>
-                <li class="about"> <a href="#">About</a></li>
-                <li class="evenement"> <a href="#">Événement</a></li>
-            </ul>
-        </nav>
-
-    <section class="introContent">
-        <div class="baseline">
-            <div class="title">
-                <h1>Burger King, KFC, McDonald’s et Quick : stop au tout-jetable !</h1>
-            </div>
-            <div class="subText">
-                <p>Malgré l'interdiction, plus de la moitié des fast-foods inspectés par les bénévoles Zero Waste continuent de servir les repas sur place dans de la vaisselle jetable. Zero Waste France a envoyé un courrier d'interpellation à Burger King, KFC, McDonald’s et Quick.</p>
-            </div>
-            <div>
-                <a href="#"><button class="custom-btn btn-5"><span>En savoir plus</span></button></a>
-            </div>
+      </nav>
+      <section
+        class="container-header d-flex justify-content-center align-items-center"
+      >
+        <div
+          class="d-flex w-50 justify-content-center align-items-center flex-column text-center"
+        >
+          <h1 class="title-container-header">#ConsignezMoi</h1>
+          <p class="paragraph-container-header">
+            Le mouvement citoyen Zero Waste lance une campagne nationale
+            d'actions ! Tou⋅tes les citoyen⋅nes qui le souhaitent sont invité⋅es
+            à rapporter leurs contenants en verre vides en magasin, avec
+            l'étiquette "Consignez-moi" et à interpeller les distributeurs et
+            les marques sur les réseaux sociaux.
+          </p>
+          <div
+            class="button w-100 h-25 d-flex justify-content-center align-items-center"
+          >
+            <button class="custom-btn btn-15">Read More</button>
+          </div>
         </div>
-    </section>
-</header>
+      </section>
+    </header>
 
-<section class="sectionCarrousel">
-    <div class="Carrousel">
-        <div class="car1"></div>
-        <div class="car2"></div>
-        <div class="car3"></div>
-    </div>
-    <div class="size"></div>
-</section>
+    <main
+      class="container-main d-flex justify-content-start align-items-center flex-column"
+    >
+      <section class="section-news mb-2">
+        <h2 class="title-h2 fs-1 fw-bold mt-5 mb-4">News</h2>
+        <!-- <img
+          class="img-camion-poubelle rounded"
+          src="assets/img/camion-poubelle.jpeg"
+          alt="Camion poubelle"
+        /> -->
+        <div class="cards">
+          <div class="card__news">
+            <div class="card__news-content">
+              <h3 class="mb-4">
+                <strong
+                  >M6 Capital dévoile le vrai prix des déchets Décryptage de
+                  Zero Waste France</strong
+                >
+              </h3>
+              <p>
+                Dimanche 5 février 2023, 2,5 millions de Français·es ont
+                découvert le vrai prix des déchets à travers l’émission Capital
+                sur M6. Un coup de projecteur bienvenu, qui montre une fois de
+                plus que la prévention des déchets doit être la [...]
+              </p>
+            </div>
+          </div>
+          <!-- <section class="second-card mb-5"> -->
+          <div class="card__news">
+            <div class="card__news-content">
+              <p>02 février 2023</p>
+              <h3>
+                Extension des consignes de tri : le coup de baguette magique du
+                recyclage ?
+              </h3>
+            </div>
+          </div>
+          <div class="card__news">
+            <div class="card__news-content">
+              <p>31 janvier 2023</p>
+              <h3>Nos actus plaidoyer en 2023</h3>
+            </div>
+          </div>
 
-<main class="main">
-<section></section>
-<section></section>
-<section></section>
-</main>
-    
-</body>
+          <div class="section-news_content">
+            <div class="gridTags">
+              <div class="keyword">Mots clef</div>
+              <a class="tag" href="#">
+                <i class="fa-regular fa-tag"></i>
+                Affaires juridiques
+              </a>
+              <a class="tag" href="#">
+                <i class="fa-regular fa-tag"></i>
+                Biodéchet
+              </a>
+              <a class="tag" href="#">
+                <i class="fa-regular fa-tag"></i>
+                Climat
+              </a>
+              <a class="tag" href="#">
+                <i class="fa-regular fa-tag"></i>
+                Compostage
+              </a>
+              <a class="tag" href="#">
+                <i class="fa-regular fa-tag"></i>
+                Consigne
+              </a>
+              <a class="tag" href="#">
+                <i class="fa-regular fa-tag"></i>
+                CSR
+              </a>
+              <a class="tag" href="#">
+                <i class="fa-regular fa-tag"></i>
+                Décharge
+              </a>
+              <a class="tag" href="#">
+                <i class="fa-regular fa-tag"></i>
+                Déchet du BTP
+              </a>
+              <a class="tag" href="#">
+                <i class="fa-regular fa-tag"></i>
+                Écoconception
+              </a>
+              <a class="tag" href="#">
+                <i class="fa-regular fa-tag"></i>
+                Économie-circulaire
+              </a>
+              <a class="tag" href="#">
+                <i class="fa-regular fa-tag"></i>
+                Emballages
+              </a>
+            </div>
+            <div class="divNewsletter">
+              <div class="newsletter">Newsletter</div>
+              <p>
+                Pour être tenu au courant de nos actualités et de nos événements
+                !
+              </p>
+              <button class="custom-btn btn-15">Je m'abonne</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

@@ -1,159 +1,283 @@
 * {
   text-decoration: none;
   list-style-type: none;
-  margin: 0%;
-  padding: 0%;
-  color: black;
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
 @font-face {
-  font-family: "";
-  src: url("font/") format("woff2"), url("font/") format("woff");
+  font-family: "Norms";
+  src: url("assets/font/norms-regular.woff2") format("woff2"),
+    url("assets/font/norms-regular.woff") format("woff");
 }
 
 body {
-  font-family: "forum";
+  font-family: "Norms, Courier New", Courier, monospace;
   word-break: break-word;
+  color: black;
 }
 
 header {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(0.25turn, #d8d336, #80af5c, #106a31);
-  
-  h1, p, a {
-    color: #fff;
-  }
-  
-  span {
-    color: #456945;
-  }
+  background: linear-gradient(0.25turn, #97d694, #90ba6f, #57b01c);
 }
 
-.navBar {
-  width: 100vw;
-  height: 150px;
-  display: flex;
-  justify-content: space-around;
-
-  .containerNavLeft {
-    width: 40%;
-    height: 100px;
-  }
-
-  .containerNavCenter {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logo {
-    display: inline-block;
-    height: 100px;
-    width: 100px;
-  }
-
-  .ulNavRight {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .size {
-    width: 50%;
-    height: 100px;
-  }
+.navbar {
+  background-color: #d4f7bd;
 }
 
-/* Intro Content */
-
-.introContent {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 100px;
+.row {
+  width: 200px;
 }
 
-.baseline {
-  width: 600px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+.logoFoodWaste {
+  height: 70px;
+  width: 70px;
 }
 
-.title {
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.subtext {
-  margin-bottom: 30px;
+.container-header {
+  height: 75vh;
 }
 
 .custom-btn {
-  width: 190px;
-  height: 50px;
+  width: 130px;
+  height: 40px;
+  color: rgb(0, 0, 0);
   border-radius: 5px;
   padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-    7px 7px 20px 0px rgba(0, 0, 0, .1),
-    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
-  font-family: "Cabin-Regular";
-  text-transform: uppercase;
 
-  &.btn-5 {
-    line-height: 42px;
-    padding: 0;
+  // 15
+  &.btn-15 {
+    background: #d4f7bd;
     border: none;
-    background: #fff;
-    background: linear-gradient(0deg, #fff 0%, #fff 100%);
+    z-index: 1;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background-color: #57b01c;
+      border-radius: 5px;
+      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
 
     &:hover {
-      color: #fed136;
-      background: transparent;
-      box-shadow: none;
+      color: #fff;
 
-      &:before,
       &:after {
+        left: 0;
         width: 100%;
-        transition: 800ms ease all;
       }
     }
 
-    &:before,
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 2px;
-      width: 0;
-      background: #fed136;
-      box-shadow: -1px -1px 5px 0.30px;
-      transition: 400ms ease all;
+    &:active {
+      top: 2px;
     }
+  }
+}
 
-    &:after {
-      right: inherit;
-      top: inherit;
-      left: 0;
-      bottom: 0;
+/* Intro Content */
+
+.container-main {
+  height: 1800px;
+  width: 100vw;
+}
+
+.section-news {
+  // height: 300px;
+  height: auto;
+  margin-inline: 3rem;
+  // display: inline-grid;
+}
+
+.card__news {
+  position: relative;
+  // width: 95vw;
+  height: 400px;
+  padding: 1rem;
+  background: url("assets/img/camion-poubelle.jpeg") center / cover no-repeat;
+  border-radius: 0.6rem;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  &-content {
+    font-size: 10px;
+    border-radius: 0.6rem;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: #070b32;
+    min-height: 250px;
+    z-index: 2;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    h3 {
+      font-size: 18px;
     }
+  }
+}
+.cards {
+  display: grid;
+  gap: 1rem;
+  // grid-template-columns: 45vw 45vw;
+  grid-template-columns: clamp(150px, 45vw, 450px) clamp(150px, 45vw, 450px);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "card1 card1"
+    "card2 card3"
+    "newContent newContent";
+}
+.card__news:nth-child(1) {
+  grid-area: card1;
+  .card__news-content {
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+  }
+}
+.card__news:nth-child(2) {
+  grid-area: card2;
+}
+.card__news:nth-child(3) {
+  grid-area: card3;
+}
+.card__news:nth-child(2),
+.card__news:nth-child(3) {
+  .card__news-content {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.card__news:not(.card__news) {
+  font-size: 10px;
+  border-radius: 0px 0px 10px 10px;
+  width: 100vw;
+  height: 100px;
+  width: 92vw;
+  background-color: green;
+  padding: 3rem;
+}
+
+.section-news_content {
+  // height: 250px;
+  position: relative;
+  background-color: #257572;
+  color: #fff;
+  background-image: url(asset/img/patterns/green-dust-and-scratches.png);
+  border-radius: 3px;
+  padding: 3rem;
+  grid-area: newContent;
+}
+
+.gridTags {
+  margin-bottom: 30px;
+}
+
+.keyword {
+  border-bottom-color: rgb(223, 234, 237);
+  border-bottom: 4px solid #dfeaed;
+  border-top: 4px solid;
+  display: inline-block;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+}
+
+.divNewletter {
+  margin-top: auto !important;
+}
+
+.tag {
+  background-color: #fff;
+  border-radius: 3px;
+  color: #070b32;
+  display: inline-block;
+  font-weight: 700;
+  padding: 0.4em 0.8em;
+  text-decoration: none;
+  white-space: nowrap;
+  margin: 4px 0;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .row {
+    padding: 0;
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .row-md {
+    height: 70px;
+    width: 49px;
+  }
+
+  .logoFoodWaste {
+    padding: 0;
+  }
+
+  .btn {
+    width: 250px;
+  }
+
+  .paragraph-container-header {
+    width: 320px;
+  }
+
+  .title-container-header {
+    width: 320px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .collapse {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .card__news-content {
+    min-height: 132px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .cards {
+    grid-template-columns: clamp(150px, 30vw, 450px) clamp(150px, 30vw, 450px) clamp(
+        350px,
+        30vw,
+        550px
+      );
+    grid-template-rows: auto;
+    grid-template-areas:
+      "card1 card1 newContent"
+      "card2 card3 newContent";
+  }
+
+  .gridTags {
+    display: flex;
+    flex-direction: column;
   }
 }
