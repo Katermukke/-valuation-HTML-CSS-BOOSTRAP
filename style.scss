@@ -42,13 +42,13 @@ header {
 }
 
 .custom-btn {
-  width: 130px;
+  width: 150px;
   height: 40px;
   color: rgb(0, 0, 0);
   border-radius: 5px;
   padding: 10px 25px;
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
+  font-family: "Norms", sans-serif;
+  font-weight: 800;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -94,18 +94,28 @@ header {
   }
 }
 
-/* Intro Content */
+// SECTION NEWS
 
 .container-main {
-  height: 1800px;
+  height: auto;
   width: 100vw;
 }
 
 .section-news {
-  // height: 300px;
   height: auto;
   margin-inline: 3rem;
-  // display: inline-grid;
+}
+
+.title-h2 {
+  width: 100px;
+  border-bottom-color: rgb(223, 234, 237);
+  border-bottom: 4px solid #000000;
+  border-top: 4px solid #000000;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+  margin-bottom: 0.6em;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .card__news {
@@ -137,6 +147,7 @@ header {
     }
   }
 }
+
 .cards {
   display: grid;
   gap: 1rem;
@@ -148,6 +159,7 @@ header {
     "card2 card3"
     "newContent newContent";
 }
+
 .card__news:nth-child(1) {
   grid-area: card1;
   .card__news-content {
@@ -158,9 +170,11 @@ header {
 }
 .card__news:nth-child(2) {
   grid-area: card2;
+  background: url("assets/img/poubelle.jpg") center / cover no-repeat;
 }
 .card__news:nth-child(3) {
   grid-area: card3;
+  background: url("assets/img/scrabble.jpg") center / cover no-repeat;
 }
 .card__news:nth-child(2),
 .card__news:nth-child(3) {
@@ -195,6 +209,7 @@ header {
   margin-bottom: 30px;
 }
 
+.newsletter,
 .keyword {
   border-bottom-color: rgb(223, 234, 237);
   border-bottom: 4px solid #dfeaed;
@@ -202,24 +217,95 @@ header {
   display: inline-block;
   padding-bottom: 0.2em;
   padding-top: 0.2em;
-}
-
-.divNewletter {
-  margin-top: auto !important;
+  margin-bottom: 0.6em;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .tag {
   background-color: #fff;
+  text-decoration: none;
   border-radius: 3px;
   color: #070b32;
   display: inline-block;
   font-weight: 700;
   padding: 0.4em 0.8em;
-  text-decoration: none;
-  white-space: nowrap;
   margin: 4px 0;
-  font-size: 0.8rem;
+  white-space: nowrap;
+  font-size: 0.7rem;
 }
+
+.divNewsletter > button {
+  font-size: 0.7em;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+// SECTION NOUS SOUTENIR
+
+.sectionNousSoutenir {
+  font-weight: bold;
+  color: #070b32;
+}
+
+.nousSoutenir {
+  height: 400px;
+  margin-top: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.aPropos {
+  padding-top: 48px;
+  padding-right: 48px;
+}
+
+.h3aPropos,
+.h4FaireUnDon {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.faireUnDon {
+  padding-top: 48px;
+  background-color: #fcb900;
+  border-radius: 0.2rem;
+  padding-left: 48px;
+}
+
+.h4FaireUnDon {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 800;
+}
+
+.faireUnDon > button {
+  width: 85px;
+}
+
+.pUnDon {
+  margin-bottom: 90px;
+}
+
+.divButtonDon > button {
+  width: 140px;
+  height: 30px;
+  font-size: 0.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+// FOOTER
+
+footer {
+  height: 380px;
+  color: #fff;
+  background-color: #070b32;
+}
+
+// MEDIA QUERIES
 
 @media (max-width: 768px) {
   .row {
@@ -280,4 +366,9 @@ header {
     display: flex;
     flex-direction: column;
   }
+}
+
+// Neccesite du js .sectionNousSoutenir
+
+@media screen and (max-width: 710px) {
 }

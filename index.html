@@ -55,7 +55,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Event</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
               <a class="nav-link" href="#">About us</a>
             </li>
             <li class="nav-item">
@@ -95,13 +95,12 @@
     <main
       class="container-main d-flex justify-content-start align-items-center flex-column"
     >
-      <section class="section-news mb-2">
-        <h2 class="title-h2 fs-1 fw-bold mt-5 mb-4">News</h2>
-        <!-- <img
-          class="img-camion-poubelle rounded"
-          src="assets/img/camion-poubelle.jpeg"
-          alt="Camion poubelle"
-        /> -->
+      <section class="section-news">
+        <div class="titleSectionNew d-flex justify-content-center">
+          <h2 class="title-h2 d-flex justify-content-center fs-1 mt-5 mb-4">
+            News
+          </h2>
+        </div>
         <div class="cards">
           <div class="card__news">
             <div class="card__news-content">
@@ -124,65 +123,69 @@
             <div class="card__news-content">
               <p>02 février 2023</p>
               <h3>
-                Extension des consignes de tri : le coup de baguette magique du
-                recyclage ?
+                <strong
+                  >Extension des consignes de tri : le coup de baguette magique
+                  du recyclage ?</strong
+                >
               </h3>
             </div>
           </div>
           <div class="card__news">
             <div class="card__news-content">
               <p>31 janvier 2023</p>
-              <h3>Nos actus plaidoyer en 2023</h3>
+              <h3><strong>Nos actus plaidoyer en 2023</strong></h3>
             </div>
           </div>
 
           <div class="section-news_content">
             <div class="gridTags">
               <div class="keyword">Mots clef</div>
-              <a class="tag" href="#">
-                <i class="fa-regular fa-tag"></i>
-                Affaires juridiques
-              </a>
-              <a class="tag" href="#">
-                <i class="fa-regular fa-tag"></i>
-                Biodéchet
-              </a>
-              <a class="tag" href="#">
-                <i class="fa-regular fa-tag"></i>
-                Climat
-              </a>
-              <a class="tag" href="#">
-                <i class="fa-regular fa-tag"></i>
-                Compostage
-              </a>
-              <a class="tag" href="#">
-                <i class="fa-regular fa-tag"></i>
-                Consigne
-              </a>
-              <a class="tag" href="#">
-                <i class="fa-regular fa-tag"></i>
-                CSR
-              </a>
-              <a class="tag" href="#">
-                <i class="fa-regular fa-tag"></i>
-                Décharge
-              </a>
-              <a class="tag" href="#">
-                <i class="fa-regular fa-tag"></i>
-                Déchet du BTP
-              </a>
-              <a class="tag" href="#">
-                <i class="fa-regular fa-tag"></i>
-                Écoconception
-              </a>
-              <a class="tag" href="#">
-                <i class="fa-regular fa-tag"></i>
-                Économie-circulaire
-              </a>
-              <a class="tag" href="#">
-                <i class="fa-regular fa-tag"></i>
-                Emballages
-              </a>
+              <div class="tagContainer">
+                <a class="tag" href="#">
+                  <i class="fa-regular fa-tag"></i>
+                  Affaires juridiques
+                </a>
+                <a class="tag" href="#">
+                  <i class="fa-regular fa-tag"></i>
+                  Biodéchet
+                </a>
+                <a class="tag" href="#">
+                  <i class="fa-regular fa-tag"></i>
+                  Climat
+                </a>
+                <a class="tag" href="#">
+                  <i class="fa-regular fa-tag"></i>
+                  Compostage
+                </a>
+                <a class="tag" href="#">
+                  <i class="fa-regular fa-tag"></i>
+                  Consigne
+                </a>
+                <a class="tag" href="#">
+                  <i class="fa-regular fa-tag"></i>
+                  CSR
+                </a>
+                <a class="tag" href="#">
+                  <i class="fa-regular fa-tag"></i>
+                  Décharge
+                </a>
+                <a class="tag" href="#">
+                  <i class="fa-regular fa-tag"></i>
+                  Déchet du BTP
+                </a>
+                <a class="tag" href="#">
+                  <i class="fa-regular fa-tag"></i>
+                  Écoconception
+                </a>
+                <a class="tag" href="#">
+                  <i class="fa-regular fa-tag"></i>
+                  Économie-circulaire
+                </a>
+                <a class="tag" href="#">
+                  <i class="fa-regular fa-tag"></i>
+                  Emballages
+                </a>
+              </div>
             </div>
             <div class="divNewsletter">
               <div class="newsletter">Newsletter</div>
@@ -195,6 +198,53 @@
           </div>
         </div>
       </section>
+      <section class="sectionNousSoutenir">
+        <div class="nousSoutenir d-flex">
+          <div class="aPropos w-50 ps-4">
+            <h3 class="h3aPropos pb-3">Nous soutenir</h3>
+            <p class="pb-3">
+              Association créée en 1997, Zero Waste France est financée en
+              majorité par les dons et adhésions des citoyens et des
+              associations. Votre adhésion nous donne les moyens d’agir et de
+              garantir l’indépendance de Zero Waste France !
+            </p>
+            <button class="custom-btn btn-15">Faire un don</button>
+          </div>
+          <div class="faireUnDon w-50 pe-4">
+            <h4 class="h4FaireUnDon pb-3">Quel est le vrai coût d'un don ?</h4>
+            <button class="custom-btn btn-15">10€</button>
+            <button class="custom-btn btn-15">20€</button>
+            <button class="custom-btn btn-15">30€</button>
+            <p class="pUnDon pt-4">
+              Un don de 10€ revient seulement à 3.40€ après réduction fiscale.
+            </p>
+            <div class="divButtonDon">
+              <button class="custom-btn btn-15">En savoir plus</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="d-flex pt-2">
+      <div class="zeroWasteFrance">
+        <h3 class="titleZerowasteFrance">Zero Waste France</h3>
+        <p>1 passage Emma Calvé 75012, Paris</p>
+        <div class="divButtonDon">
+          <button class="custom-btn btn-15">Je m'abonne</button>
+        </div>
+      </div>
+      <div class="nousSuivre">
+        <h3>Nous suivre</h3>
+      </div>
+      <div class="newsletterFooter">
+        <h3>Newsletter</h3>
+        <p>
+          Pour être tenu au courant de nos actualités et de nos événements !
+        </p>
+        <div class="divButtonDon">
+          <button class="custom-btn btn-15">Je m'abonne</button>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
