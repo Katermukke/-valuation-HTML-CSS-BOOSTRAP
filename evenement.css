@@ -23,8 +23,6 @@ header {
 
 .navbar {
   background-color: #d4f7bd;
-  position: relative;
-  z-index: 10;
 }
 
 .row {
@@ -36,6 +34,12 @@ header {
   width: 70px;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .container-main {
   height: auto;
   width: 100vw;
@@ -44,6 +48,7 @@ header {
 .section-news {
   height: auto;
   margin-inline: 3rem;
+  width: 70%;
 }
 
 .title-h2 {
@@ -227,4 +232,29 @@ footer > div > h3 {
 }
 .custom-btn.btn-15:active {
   top: 2px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    padding: 0;
+    width: 100vw;
+    justify-content: center;
+  }
+  .row-md {
+    height: 70px;
+    width: 49px;
+  }
+  .logoFoodWaste {
+    padding: 0;
+  }
+  .btn {
+    width: 250px;
+  }
+  .paragraph-container-header {
+    width: 320px;
+  }
+  .title-container-header {
+    width: 320px;
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=evenement.css.map */

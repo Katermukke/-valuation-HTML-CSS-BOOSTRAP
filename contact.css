@@ -1,0 +1,40 @@
+* {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Norms";
+  src: url("assets/font/norms-regular.woff2") format("woff2"), url("assets/font/norms-regular.woff") format("woff");
+}
+body {
+  font-family: "Norms, Courier New", Courier, monospace;
+  word-break: break-word;
+  color: black;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(0.25turn, #97d694, #90ba6f, #57b01c);
+}
+
+.navbar {
+  background-color: #d4f7bd;
+}
+
+.row {
+  width: 200px;
+}
+
+.logoFoodWaste {
+  height: 70px;
+  width: 70px;
+}
+
+.container-header {
+  height: 75vh;
+}/*# sourceMappingURL=contact.css.map */
