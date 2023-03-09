@@ -19,9 +19,8 @@ body {
 }
 
 header {
-  height: 100vh;
+  height: 100px;
   width: 100vw;
-  background: linear-gradient(0.25turn, #97d694, #90ba6f, #57b01c);
 }
 
 .navbar {
@@ -39,4 +38,231 @@ header {
 
 .container-header {
   height: 75vh;
+}
+
+.custom-btn {
+  width: 150px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Norms", sans-serif;
+  font-weight: 800;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+
+  // 15
+  &.btn-15 {
+    background: #d4f7bd;
+    border: none;
+    z-index: 1;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background-color: #57b01c;
+      border-radius: 5px;
+      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      color: #fff;
+
+      &:after {
+        left: 0;
+        width: 100%;
+      }
+    }
+
+    &:active {
+      top: 2px;
+    }
+  }
+}
+
+// MAIN
+
+input[type="text"],
+textarea,
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+}
+
+label {
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+  color: #fff;
+}
+
+input[type="submit"] {
+  background-color: #61a733;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #9ddf71;
+}
+
+.formulaire {
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #193f00;
+  padding: 20px;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  .titleForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    border-bottom-color: rgb(223, 234, 237);
+    border-bottom: 4px solid #dfeaed;
+    border-top: 4px solid;
+    display: inline-block;
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
+    margin-bottom: 0.6em;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    width: 58%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .buttonForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form > .custom-btn {
+    height: 50px;
+  }
+}
+
+// FOOTER
+
+footer {
+  height: 250px;
+  color: #fff;
+  background-color: #070b32;
+  padding-top: 40px;
+  margin-top: 80px;
+
+  .zeroWasteFrance {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nousSuivre {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  i {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 2em;
+  }
+
+  .newsletterFooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+  }
+
+  .newsletterFooter > p {
+    width: 240px;
+  }
+}
+
+footer > div {
+  display: flex;
+  text-align: center;
+  width: 200px;
+}
+
+footer > div > .footerTitle {
+  border-bottom-color: rgb(223, 234, 237);
+  border-bottom: 4px solid #dfeaed;
+  border-top: 4px solid;
+  display: inline-block;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+  margin-bottom: 0.6em;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+// MEDIA QUERIES
+
+@media (max-width: 768px) {
+  .row {
+    padding: 0;
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .row-md {
+    height: 70px;
+    width: 49px;
+  }
+
+  .logoFoodWaste {
+    padding: 0;
+  }
+
+  .btn {
+    width: 250px;
+  }
+
+  .paragraph-container-header {
+    width: 320px;
+  }
+
+  .title-container-header {
+    width: 320px;
+    margin-bottom: 20px;
+  }
 }

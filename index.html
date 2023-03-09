@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -26,6 +26,8 @@
     <title>Bootstrap c'est sympas mais ca reste de la merde</title>
   </head>
   <body id="home">
+    <!-- HEADER -->
+
     <header>
       <nav class="navbar navbar-expand-md shadow p-3 mb-5 px-3">
         <div class="row-md"></div>
@@ -84,11 +86,13 @@
           <div
             class="button w-100 h-25 d-flex justify-content-center align-items-center"
           >
-            <button class="custom-btn btn-15">Read More</button>
+            <button class="custom-btn btn-15">En savoir plus</button>
           </div>
         </div>
       </section>
     </header>
+
+    <!-- MAIN -->
 
     <main
       class="container-main d-flex justify-content-start align-items-center flex-column"
@@ -99,6 +103,9 @@
             News
           </h2>
         </div>
+
+        <!-- FIRST CARD NEWS -->
+
         <div class="cards">
           <div class="card__news">
             <div class="card__news-content">
@@ -116,7 +123,9 @@
               </p>
             </div>
           </div>
-          <!-- <section class="second-card mb-5"> -->
+
+          <!-- SECOND CARD NEWS -->
+
           <div class="card__news">
             <div class="card__news-content">
               <p>02 février 2023</p>
@@ -128,6 +137,9 @@
               </h3>
             </div>
           </div>
+
+          <!-- THIRD CARD NEWS -->
+
           <div class="card__news">
             <div class="card__news-content">
               <p>31 janvier 2023</p>
@@ -140,47 +152,47 @@
               <div class="keyword">Mots clef</div>
               <div class="tagContainer">
                 <a class="tag" href="#">
-                  <i class="fa-regular fa-tag"></i>
+                  <i class="fa-solid fa-tag"></i>
                   Affaires juridiques
                 </a>
                 <a class="tag" href="#">
-                  <i class="fa-regular fa-tag"></i>
+                  <i class="fa-solid fa-tag"></i>
                   Biodéchet
                 </a>
                 <a class="tag" href="#">
-                  <i class="fa-regular fa-tag"></i>
+                  <i class="fa-solid fa-tag"></i>
                   Climat
                 </a>
                 <a class="tag" href="#">
-                  <i class="fa-regular fa-tag"></i>
+                  <i class="fa-solid fa-tag"></i>
                   Compostage
                 </a>
                 <a class="tag" href="#">
-                  <i class="fa-regular fa-tag"></i>
+                  <i class="fa-solid fa-tag"></i>
                   Consigne
                 </a>
                 <a class="tag" href="#">
-                  <i class="fa-regular fa-tag"></i>
+                  <i class="fa-solid fa-tag"></i>
                   CSR
                 </a>
                 <a class="tag" href="#">
-                  <i class="fa-regular fa-tag"></i>
+                  <i class="fa-solid fa-tag"></i>
                   Décharge
                 </a>
                 <a class="tag" href="#">
-                  <i class="fa-regular fa-tag"></i>
+                  <i class="fa-solid fa-tag"></i>
                   Déchet du BTP
                 </a>
                 <a class="tag" href="#">
-                  <i class="fa-regular fa-tag"></i>
+                  <i class="fa-solid fa-tag"></i>
                   Écoconception
                 </a>
                 <a class="tag" href="#">
-                  <i class="fa-regular fa-tag"></i>
+                  <i class="fa-solid fa-tag"></i>
                   Économie-circulaire
                 </a>
                 <a class="tag" href="#">
-                  <i class="fa-regular fa-tag"></i>
+                  <i class="fa-solid fa-tag"></i>
                   Emballages
                 </a>
               </div>
@@ -198,7 +210,7 @@
       </section>
       <section class="sectionNousSoutenir">
         <div class="nousSoutenir d-flex">
-          <div class="aPropos w-50 ps-4">
+          <div class="aPropos w-100 w-md-50 text-center text-md-start ps-4">
             <h3 class="h3aPropos pb-3">Nous soutenir</h3>
             <p class="pb-3">
               Association créée en 1997, Zero Waste France est financée en
@@ -208,7 +220,7 @@
             </p>
             <button class="custom-btn btn-15">Faire un don</button>
           </div>
-          <div class="faireUnDon w-50 pe-4">
+          <div class="faireUnDon d-none d-md-block w-100 pe-4">
             <h4 class="h4FaireUnDon pb-3">Quel est le vrai coût d'un don ?</h4>
             <button class="custom-btn btn-15">10€</button>
             <button class="custom-btn btn-15">20€</button>
@@ -223,24 +235,47 @@
         </div>
       </section>
     </main>
+
+    <!-- FOOTER -->
+
     <footer class="d-flex">
       <div class="zeroWasteFrance">
-        <h3 class="titleZerowasteFrance">Zero Waste France</h3>
+        <p class="footerTitle">Zero Waste France</p>
         <p>1 passage Emma Calvé 75010 Paris</p>
         <div class="divButtonDon">
-          <button class="custom-btn btn-15">Je m'abonne</button>
+          <a
+            href="https://www.google.com/search?client=firefox-b-d&sxsrf=AJOqlzUYBtKZiwJvfMvGI8OqYhp1zvAzvA:1678381679473&q=The+Zero+Waste+House&ludocid=5404065151996408799&gsas=1&client=firefox-b-d&lsig=AB86z5VY31oLCphwDwMoP_Apxb6_&sa=X&ved=2ahUKEwjqs7X-qs_9AhVZSKQEHcS5Cr4QoAJ6BAgIEAc&biw=917&bih=995&dpr=1"
+            ><button class="custom-btn btn-15">Decouvrir</button></a
+          >
         </div>
       </div>
       <div class="nousSuivre">
-        <h3>Nous suivre</h3>
+        <p class="footerTitle">Nous suivre</p>
+        <div class="icon">
+          <a href="https://www.facebook.com/ZeroWasteFrance/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.facebook.com/ZeroWasteFrance/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/zerowastefr?lang=fr"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/zero-waste-france/?originalSubdomain=fr"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
       </div>
       <div class="newsletterFooter">
-        <h3>Newsletter</h3>
+        <p class="footerTitle">Newsletter</p>
         <p>
           Pour être tenu au courant de nos actualités et de nos événements !
         </p>
         <div class="divButtonDon">
-          <button class="custom-btn btn-15">Je m'abonne</button>
+          <a href="contact.html#contact"
+            ><button class="custom-btn btn-15">Je m'abonne</button></a
+          >
         </div>
       </div>
       <!-- <p class="row d">

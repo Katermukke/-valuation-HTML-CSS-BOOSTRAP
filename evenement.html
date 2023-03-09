@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Description du contenu" />
+    <meta
+      name="og:title"
+      property="og:title"
+      content="Le nom de votre article"
+    />
+    <meta name=" author" content=" Nom de l’auteur" />
+    <meta name=" copyright" content=" Titulaire des droits" />
+    <meta property="og:url" content="http://www.exemple.com" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -27,6 +36,8 @@
   </head>
 
   <body id="evenement">
+    <!-- HEADER -->
+
     <header>
       <nav class="navbar navbar-expand-md shadow p-3 mb-5 px-3">
         <div class="row-md"></div>
@@ -75,7 +86,9 @@
         </div>
       </nav>
     </header>
+
     <!-- MAIN -->
+
     <main>
       <section class="section-news">
         <div class="titleSectionNew d-flex justify-content-center">
@@ -83,6 +96,9 @@
             News
           </h2>
         </div>
+
+        <!-- FIRST CARD NEWS -->
+
         <div class="cards">
           <div class="card__news">
             <div class="card__news-content">
@@ -98,6 +114,9 @@
               </p>
             </div>
           </div>
+
+          <!-- SECOND CARD NEWS -->
+
           <div class="card__news">
             <div class="card__news-content">
               <p>02 février 2023</p>
@@ -114,6 +133,9 @@
               </p>
             </div>
           </div>
+
+          <!-- THIRD CARD NEWS -->
+
           <div class="card__news">
             <div class="card__news-content">
               <p>31 janvier 2023</p>
@@ -129,24 +151,47 @@
         </div>
       </section>
     </main>
+
+    <!-- FOOTER -->
+
     <footer class="d-flex">
       <div class="zeroWasteFrance">
-        <h3 class="titleZerowasteFrance">Zero Waste France</h3>
+        <p class="footerTitle">Zero Waste France</p>
         <p>1 passage Emma Calvé 75010 Paris</p>
         <div class="divButtonDon">
-          <button class="custom-btn btn-15">Je m'abonne</button>
+          <a
+            href="https://www.google.com/search?client=firefox-b-d&sxsrf=AJOqlzUYBtKZiwJvfMvGI8OqYhp1zvAzvA:1678381679473&q=The+Zero+Waste+House&ludocid=5404065151996408799&gsas=1&client=firefox-b-d&lsig=AB86z5VY31oLCphwDwMoP_Apxb6_&sa=X&ved=2ahUKEwjqs7X-qs_9AhVZSKQEHcS5Cr4QoAJ6BAgIEAc&biw=917&bih=995&dpr=1"
+            ><button class="custom-btn btn-15">Decouvrir</button></a
+          >
         </div>
       </div>
       <div class="nousSuivre">
-        <h3>Nous suivre</h3>
+        <p class="footerTitle">Nous suivre</p>
+        <div class="icon">
+          <a href="https://www.facebook.com/ZeroWasteFrance/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.facebook.com/ZeroWasteFrance/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/zerowastefr?lang=fr"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/zero-waste-france/?originalSubdomain=fr"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
       </div>
       <div class="newsletterFooter">
-        <h3>Newsletter</h3>
+        <p class="footerTitle">Newsletter</p>
         <p>
           Pour être tenu au courant de nos actualités et de nos événements !
         </p>
         <div class="divButtonDon">
-          <button class="custom-btn btn-15">Je m'abonne</button>
+          <a href="contact.html#contact"
+            ><button class="custom-btn btn-15">Je m'abonne</button></a
+          >
         </div>
       </div>
       <!-- <p class="row d">

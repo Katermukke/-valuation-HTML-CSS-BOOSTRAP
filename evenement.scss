@@ -36,6 +36,59 @@ header {
   width: 70px;
 }
 
+.custom-btn {
+  width: 150px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Norms", sans-serif;
+  font-weight: 800;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+
+  // 15
+  &.btn-15 {
+    background: #d4f7bd;
+    border: none;
+    z-index: 1;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background-color: #57b01c;
+      border-radius: 5px;
+      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      color: #fff;
+
+      &:after {
+        left: 0;
+        width: 100%;
+      }
+    }
+
+    &:active {
+      top: 2px;
+    }
+  }
+}
+
 // MAIN
 
 main {
@@ -154,38 +207,46 @@ footer {
   background-color: #070b32;
   padding-top: 40px;
   margin-top: 80px;
+
+  .zeroWasteFrance {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nousSuivre {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  i {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 2em;
+  }
+
+  .newsletterFooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+  }
+
+  .newsletterFooter > p {
+    width: 240px;
+  }
 }
 
-.zeroWasteFrance {
-  width: 33%;
+footer > div {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.nousSuivre {
-  width: 33%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.newsletterFooter {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 33%;
-}
-
-.zeroWasteFrance > p {
+  text-align: center;
   width: 200px;
 }
 
-.newsletterFooter > p {
-  width: 240px;
-}
-
-footer > div > h3 {
+footer > div > .footerTitle {
   border-bottom-color: rgb(223, 234, 237);
   border-bottom: 4px solid #dfeaed;
   border-top: 4px solid;
@@ -196,59 +257,6 @@ footer > div > h3 {
   font-weight: 900;
   text-transform: uppercase;
   font-size: 18px;
-}
-
-.custom-btn {
-  width: 150px;
-  height: 40px;
-  color: rgb(0, 0, 0);
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-family: "Norms", sans-serif;
-  font-weight: 800;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-  outline: none;
-
-  // 15
-  &.btn-15 {
-    background: #d4f7bd;
-    border: none;
-    z-index: 1;
-
-    &:after {
-      position: absolute;
-      content: "";
-      width: 0;
-      height: 100%;
-      top: 0;
-      right: 0;
-      z-index: -1;
-      background-color: #57b01c;
-      border-radius: 5px;
-      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-        7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-    }
-
-    &:hover {
-      color: #fff;
-
-      &:after {
-        left: 0;
-        width: 100%;
-      }
-    }
-
-    &:active {
-      top: 2px;
-    }
-  }
 }
 
 // MEDIA QUERIES

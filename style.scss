@@ -12,6 +12,12 @@
     url("assets/font/norms-regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "wickedgrit";
+  src: url("assets/font/wickedgrit.woff2") format("woff2"),
+    url("assets/font/wickedgrit.woff") format("woff");
+}
+
 body {
   font-family: "Norms, Courier New", Courier, monospace;
   word-break: break-word;
@@ -21,7 +27,8 @@ body {
 header {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(0.25turn, #97d694, #90ba6f, #57b01c);
+  background: url("assets/img/bouteilles-en-plastique.jpg") center / cover
+    no-repeat;
 }
 
 .navbar {
@@ -39,6 +46,7 @@ header {
 
 .container-header {
   height: 75vh;
+  color: #fff;
 }
 
 .custom-btn {
@@ -46,9 +54,8 @@ header {
   height: 40px;
   color: rgb(0, 0, 0);
   border-radius: 5px;
-  padding: 10px 25px;
+  padding: 10px px;
   font-family: "Norms", sans-serif;
-  font-weight: 800;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -289,7 +296,7 @@ header {
 }
 
 .pUnDon {
-  margin-bottom: 90px;
+  margin-bottom: 100px;
 }
 
 .divButtonDon > button {
@@ -307,38 +314,47 @@ footer {
   color: #fff;
   background-color: #070b32;
   padding-top: 40px;
+  margin-top: 80px;
+
+  .zeroWasteFrance {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nousSuivre {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  i {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 2em;
+  }
+
+  .newsletterFooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+  }
+
+  .newsletterFooter > p {
+    width: 240px;
+  }
 }
 
-.zeroWasteFrance {
-  width: 33%;
+footer > div {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.nousSuivre {
-  width: 33%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.newsletterFooter {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 33%;
-}
-
-.zeroWasteFrance > p {
+  text-align: center;
   width: 200px;
 }
 
-.newsletterFooter > p {
-  width: 240px;
-}
-
-footer > div > h3 {
+footer > div > .footerTitle {
   border-bottom-color: rgb(223, 234, 237);
   border-bottom: 4px solid #dfeaed;
   border-top: 4px solid;
@@ -350,6 +366,7 @@ footer > div > h3 {
   text-transform: uppercase;
   font-size: 18px;
 }
+
 // MEDIA QUERIES
 
 @media (max-width: 768px) {
@@ -382,12 +399,6 @@ footer > div > h3 {
   }
 }
 
-@media (min-width: 768px) {
-  .collapse {
-    font-size: 18px;
-  }
-}
-
 @media screen and (min-width: 680px) {
   .card__news-content {
     min-height: 132px;
@@ -415,9 +426,4 @@ footer > div > h3 {
   .section-news_content {
     margin-top: 0;
   }
-}
-
-// Neccesite du js .sectionNousSoutenir
-
-@media screen and (max-width: 710px) {
 }
