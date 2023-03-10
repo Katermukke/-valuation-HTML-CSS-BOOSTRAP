@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Description du contenu" />
+    <meta
+      name="og:title"
+      property="og:title"
+      content="Le nom de votre article"
+    />
+    <meta name=" author" content=" Nom de l’auteur" />
+    <meta name=" copyright" content=" Titulaire des droits" />
+    <meta property="og:url" content="http://www.exemple.com" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -23,7 +32,7 @@
       defer
     ></script>
     <script src="script.js"></script>
-    <title>Bootstrap c'est sympas mais ca reste de la merde</title>
+    <title>Accueil</title>
   </head>
   <body id="home">
     <!-- HEADER -->
@@ -53,7 +62,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav d-flex align-items-center ms-auto ms-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#"
+                >Accueil</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="evenement.html#evenement">Evenement</a>
@@ -70,13 +81,13 @@
         </div>
       </nav>
       <section
-        class="container-header d-flex justify-content-center align-items-center"
+        class="containerHeader d-flex justify-content-center align-items-center"
       >
         <div
-          class="d-flex w-50 justify-content-center align-items-center flex-column text-center"
+          class="divHeader d-flex w-50 justify-content-center align-items-center flex-column text-center"
         >
-          <h1 class="title-container-header">#ConsignezMoi</h1>
-          <p class="paragraph-container-header">
+          <h1 class="titleContainerHeader">#ConsignezMoi</h1>
+          <p class="paragraphContainerHeader">
             Le mouvement citoyen Zero Waste lance une campagne nationale
             d'actions ! Tou⋅tes les citoyen⋅nes qui le souhaitent sont invité⋅es
             à rapporter leurs contenants en verre vides en magasin, avec
@@ -86,7 +97,9 @@
           <div
             class="button w-100 h-25 d-flex justify-content-center align-items-center"
           >
-            <button class="custom-btn btn-15">En savoir plus</button>
+            <a href="contact.html#contact"
+              ><button class="custom-btn btn-15">En savoir plus</button></a
+            >
           </div>
         </div>
       </section>
@@ -95,11 +108,11 @@
     <!-- MAIN -->
 
     <main
-      class="container-main d-flex justify-content-start align-items-center flex-column"
+      class="containerMain d-flex justify-content-start align-items-center flex-column"
     >
-      <section class="section-news">
+      <section class="sectionNews">
         <div class="titleSectionNew d-flex justify-content-center">
-          <h2 class="title-h2 d-flex justify-content-center fs-1 mt-5 mb-4">
+          <h2 class="titleH2 d-flex justify-content-center fs-1 mt-5 mb-4">
             News
           </h2>
         </div>
@@ -107,8 +120,8 @@
         <!-- FIRST CARD NEWS -->
 
         <div class="cards">
-          <div class="card__news">
-            <div class="card__news-content">
+          <div class="cardNews">
+            <div class="cardNews-content">
               <h3 class="mb-4">
                 <strong
                   >M6 Capital dévoile le vrai prix des déchets Décryptage de
@@ -126,8 +139,8 @@
 
           <!-- SECOND CARD NEWS -->
 
-          <div class="card__news">
-            <div class="card__news-content">
+          <div class="cardNews">
+            <div class="cardNews-content">
               <p>02 février 2023</p>
               <h3>
                 <strong
@@ -140,12 +153,14 @@
 
           <!-- THIRD CARD NEWS -->
 
-          <div class="card__news">
-            <div class="card__news-content">
+          <div class="cardNews">
+            <div class="cardNews-content">
               <p>31 janvier 2023</p>
               <h3><strong>Nos actus plaidoyer en 2023</strong></h3>
             </div>
           </div>
+
+          <!-- THIRD CARD NEWS -->
 
           <div class="section-news_content">
             <div class="gridTags">
@@ -203,7 +218,9 @@
                 Pour être tenu au courant de nos actualités et de nos événements
                 !
               </p>
-              <button class="custom-btn btn-15">Je m'abonne</button>
+              <a href="contact.html#contact"
+                ><button class="custom-btn btn-15">Je m'abonne</button></a
+              >
             </div>
           </div>
         </div>
@@ -218,7 +235,9 @@
               associations. Votre adhésion nous donne les moyens d’agir et de
               garantir l’indépendance de Zero Waste France !
             </p>
-            <button class="custom-btn btn-15">Faire un don</button>
+            <a href="https://fr.tipeee.com/"
+              ><button class="custom-btn btn-15">Faire un don</button></a
+            >
           </div>
           <div class="faireUnDon d-none d-md-block w-100 pe-4">
             <h4 class="h4FaireUnDon pb-3">Quel est le vrai coût d'un don ?</h4>
@@ -229,7 +248,9 @@
               Un don de 10€ revient seulement à 3.40€ après réduction fiscale.
             </p>
             <div class="divButtonDon">
-              <button class="custom-btn btn-15">En savoir plus</button>
+              <a href="contact.html#contact"
+                ><button class="custom-btn btn-15">En savoir plus</button></a
+              >
             </div>
           </div>
         </div>
@@ -239,50 +260,52 @@
     <!-- FOOTER -->
 
     <footer class="d-flex">
-      <div class="zeroWasteFrance">
-        <p class="footerTitle">Zero Waste France</p>
-        <p>1 passage Emma Calvé 75010 Paris</p>
-        <div class="divButtonDon">
-          <a
-            href="https://www.google.com/search?client=firefox-b-d&sxsrf=AJOqlzUYBtKZiwJvfMvGI8OqYhp1zvAzvA:1678381679473&q=The+Zero+Waste+House&ludocid=5404065151996408799&gsas=1&client=firefox-b-d&lsig=AB86z5VY31oLCphwDwMoP_Apxb6_&sa=X&ved=2ahUKEwjqs7X-qs_9AhVZSKQEHcS5Cr4QoAJ6BAgIEAc&biw=917&bih=995&dpr=1"
-            ><button class="custom-btn btn-15">Decouvrir</button></a
-          >
+      <div class="divFooter">
+        <div class="zeroWasteFrance">
+          <p class="footerTitle">Zero Waste France</p>
+          <p>1 passage Emma Calvé 75010 Paris</p>
+          <div class="divButtonDon">
+            <a
+              href="https://www.google.com/search?client=firefox-b-d&sxsrf=AJOqlzUYBtKZiwJvfMvGI8OqYhp1zvAzvA:1678381679473&q=The+Zero+Waste+House&ludocid=5404065151996408799&gsas=1&client=firefox-b-d&lsig=AB86z5VY31oLCphwDwMoP_Apxb6_&sa=X&ved=2ahUKEwjqs7X-qs_9AhVZSKQEHcS5Cr4QoAJ6BAgIEAc&biw=917&bih=995&dpr=1"
+              ><button class="custom-btn btn-15">Decouvrir</button></a
+            >
+          </div>
+        </div>
+        <div class="nousSuivre">
+          <p class="footerTitle">Nous suivre</p>
+          <div class="icon">
+            <a href="https://www.facebook.com/ZeroWasteFrance/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.facebook.com/ZeroWasteFrance/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/zerowastefr?lang=fr"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/zero-waste-france/?originalSubdomain=fr"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="newsletterFooter">
+          <p class="footerTitle">Newsletter</p>
+          <p>
+            Pour être tenu au courant de nos actualités et de nos événements !
+          </p>
+          <div class="divButtonDon">
+            <a href="contact.html#contact"
+              ><button class="custom-btn btn-15">Je m'abonne</button></a
+            >
+          </div>
         </div>
       </div>
-      <div class="nousSuivre">
-        <p class="footerTitle">Nous suivre</p>
-        <div class="icon">
-          <a href="https://www.facebook.com/ZeroWasteFrance/"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="https://www.facebook.com/ZeroWasteFrance/"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="https://twitter.com/zerowastefr?lang=fr"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/company/zero-waste-france/?originalSubdomain=fr"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-        </div>
-      </div>
-      <div class="newsletterFooter">
-        <p class="footerTitle">Newsletter</p>
+      <div class="conception">
         <p>
-          Pour être tenu au courant de nos actualités et de nos événements !
+          © Copyright <a href="#">Arthur Clerc</a> 2023. Tous droits réservés.
         </p>
-        <div class="divButtonDon">
-          <a href="contact.html#contact"
-            ><button class="custom-btn btn-15">Je m'abonne</button></a
-          >
-        </div>
       </div>
-      <!-- <p class="row d">
-        Conception & Réalisation: <a href="#">Yann Rolland</a> +
-        <a href="#">Thibaut Caroli</a> + <a href="#">Arthur Clerc</a>
-      </p>
-      -->
     </footer>
   </body>
 </html>

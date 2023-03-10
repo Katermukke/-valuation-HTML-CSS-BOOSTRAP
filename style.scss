@@ -44,7 +44,7 @@ header {
   width: 70px;
 }
 
-.container-header {
+.containerHeader {
   height: 75vh;
   color: #fff;
 }
@@ -103,17 +103,17 @@ header {
 
 // SECTION NEWS
 
-.container-main {
+x.containerMain {
   height: auto;
   width: 100vw;
 }
 
-.section-news {
+.sectionNews {
   height: auto;
   margin-inline: 3rem;
 }
 
-.title-h2 {
+.titleH2 {
   width: 100px;
   border-bottom-color: rgb(223, 234, 237);
   border-bottom: 4px solid #000000;
@@ -125,7 +125,7 @@ header {
   text-transform: uppercase;
 }
 
-.card__news {
+.cardNews {
   position: relative;
   // width: 95vw;
   height: 400px;
@@ -166,31 +166,31 @@ header {
     "newContent newContent";
 }
 
-.card__news:nth-child(1) {
+.cardNews:nth-child(1) {
   grid-area: card1;
-  .card__news-content {
+  .cardNews-content {
     bottom: 2rem;
     left: 2rem;
     right: 2rem;
   }
 }
-.card__news:nth-child(2) {
+.cardNews:nth-child(2) {
   grid-area: card2;
   background: url("assets/img/poubelle.jpg") center / cover no-repeat;
 }
-.card__news:nth-child(3) {
+.cardNews:nth-child(3) {
   grid-area: card3;
   background: url("assets/img/scrabble.jpg") center / cover no-repeat;
 }
-.card__news:nth-child(2),
-.card__news:nth-child(3) {
-  .card__news-content {
+.cardNews:nth-child(2),
+.cardNews:nth-child(3) {
+  .cardNews-content {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
 }
 
-.card__news:not(.card__news) {
+.cardNews:not(.cardNews) {
   font-size: 10px;
   border-radius: 0px 0px 10px 10px;
   width: 100vw;
@@ -209,7 +209,7 @@ header {
   border-radius: 3px;
   padding: 3rem;
   grid-area: newContent;
-  margin-top: 40px;
+  margin-top: 40p;
 }
 
 .gridTags {
@@ -310,11 +310,19 @@ header {
 // FOOTER
 
 footer {
-  height: 250px;
+  height: auto;
   color: #fff;
   background-color: #070b32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding-top: 40px;
   margin-top: 80px;
+
+  .divFooter {
+    width: 100vw;
+  }
 
   .zeroWasteFrance {
     width: 33%;
@@ -346,6 +354,27 @@ footer {
   .newsletterFooter > p {
     width: 240px;
   }
+
+  .conception {
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 100vw;
+    height: 30px;
+  }
+
+  .conception > p {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+
+  .conception > p > a {
+    text-decoration: none;
+    color: #e2bb2e;
+  }
 }
 
 footer > div {
@@ -354,7 +383,7 @@ footer > div {
   width: 200px;
 }
 
-footer > div > .footerTitle {
+footer > div > div > .footerTitle {
   border-bottom-color: rgb(223, 234, 237);
   border-bottom: 4px solid #dfeaed;
   border-top: 4px solid;
@@ -389,13 +418,24 @@ footer > div > .footerTitle {
     width: 250px;
   }
 
-  .paragraph-container-header {
+  .paragraphContainerHeader {
     width: 320px;
   }
 
-  .title-container-header {
+  .titleContainerHeader {
     width: 320px;
     margin-bottom: 20px;
+  }
+
+  .divFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    div {
+      margin-bottom: 20px;
+    }
   }
 }
 

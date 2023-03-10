@@ -39,7 +39,7 @@ header {
   width: 70px;
 }
 
-.container-header {
+.containerHeader {
   height: 75vh;
   color: #fff;
 }
@@ -88,17 +88,17 @@ header {
   top: 2px;
 }
 
-.container-main {
+x.containerMain {
   height: auto;
   width: 100vw;
 }
 
-.section-news {
+.sectionNews {
   height: auto;
   margin-inline: 3rem;
 }
 
-.title-h2 {
+.titleH2 {
   width: 100px;
   border-bottom-color: rgb(223, 234, 237);
   border-bottom: 4px solid #000000;
@@ -110,7 +110,7 @@ header {
   text-transform: uppercase;
 }
 
-.card__news {
+.cardNews {
   position: relative;
   height: 400px;
   padding: 1rem;
@@ -122,7 +122,7 @@ header {
   align-items: center;
   z-index: 1;
 }
-.card__news-content {
+.cardNews-content {
   font-size: 10px;
   border-radius: 0.6rem;
   position: absolute;
@@ -135,7 +135,7 @@ header {
   left: 0;
   right: 0;
 }
-.card__news-content h3 {
+.cardNews-content h3 {
   font-size: 18px;
 }
 
@@ -147,32 +147,32 @@ header {
   grid-template-areas: "card1 card1" "card2 card3" "newContent newContent";
 }
 
-.card__news:nth-child(1) {
+.cardNews:nth-child(1) {
   grid-area: card1;
 }
-.card__news:nth-child(1) .card__news-content {
+.cardNews:nth-child(1) .cardNews-content {
   bottom: 2rem;
   left: 2rem;
   right: 2rem;
 }
 
-.card__news:nth-child(2) {
+.cardNews:nth-child(2) {
   grid-area: card2;
   background: url("assets/img/poubelle.jpg") center/cover no-repeat;
 }
 
-.card__news:nth-child(3) {
+.cardNews:nth-child(3) {
   grid-area: card3;
   background: url("assets/img/scrabble.jpg") center/cover no-repeat;
 }
 
-.card__news:nth-child(2) .card__news-content,
-.card__news:nth-child(3) .card__news-content {
+.cardNews:nth-child(2) .cardNews-content,
+.cardNews:nth-child(3) .cardNews-content {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.card__news:not(.card__news) {
+.cardNews:not(.cardNews) {
   font-size: 10px;
   border-radius: 0px 0px 10px 10px;
   width: 100vw;
@@ -190,7 +190,7 @@ header {
   border-radius: 3px;
   padding: 3rem;
   grid-area: newContent;
-  margin-top: 40px;
+  margin-top: 40p;
 }
 
 .gridTags {
@@ -284,11 +284,18 @@ header {
 }
 
 footer {
-  height: 250px;
+  height: auto;
   color: #fff;
   background-color: #070b32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding-top: 40px;
   margin-top: 80px;
+}
+footer .divFooter {
+  width: 100vw;
 }
 footer .zeroWasteFrance {
   width: 33%;
@@ -316,6 +323,24 @@ footer .newsletterFooter {
 footer .newsletterFooter > p {
   width: 240px;
 }
+footer .conception {
+  background-color: #202020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  width: 100vw;
+  height: 30px;
+}
+footer .conception > p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+footer .conception > p > a {
+  text-decoration: none;
+  color: #e2bb2e;
+}
 
 footer > div {
   display: flex;
@@ -323,7 +348,7 @@ footer > div {
   width: 200px;
 }
 
-footer > div > .footerTitle {
+footer > div > div > .footerTitle {
   border-bottom-color: rgb(223, 234, 237);
   border-bottom: 4px solid #dfeaed;
   border-top: 4px solid;
@@ -352,11 +377,20 @@ footer > div > .footerTitle {
   .btn {
     width: 250px;
   }
-  .paragraph-container-header {
+  .paragraphContainerHeader {
     width: 320px;
   }
-  .title-container-header {
+  .titleContainerHeader {
     width: 320px;
+    margin-bottom: 20px;
+  }
+  .divFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .divFooter div {
     margin-bottom: 20px;
   }
 }
