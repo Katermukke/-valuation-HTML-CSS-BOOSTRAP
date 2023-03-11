@@ -88,7 +88,7 @@ header {
   top: 2px;
 }
 
-x.containerMain {
+.containerMain {
   height: auto;
   width: 100vw;
 }
@@ -128,7 +128,7 @@ x.containerMain {
   position: absolute;
   background-color: rgb(255, 255, 255);
   color: #070b32;
-  min-height: 250px;
+  min-height: 150px;
   z-index: 2;
   padding: 10px;
   bottom: 0;
@@ -186,7 +186,6 @@ x.containerMain {
   position: relative;
   background-color: #257572;
   color: #fff;
-  background-image: url(asset/img/patterns/green-dust-and-scratches.png);
   border-radius: 3px;
   padding: 3rem;
   grid-area: newContent;
@@ -208,6 +207,10 @@ x.containerMain {
   margin-bottom: 0.6em;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.keyword {
+  width: 90px;
 }
 
 .tag {
@@ -292,7 +295,6 @@ footer {
   align-items: center;
   flex-direction: column;
   padding-top: 40px;
-  margin-top: 80px;
 }
 footer .divFooter {
   width: 100vw;
