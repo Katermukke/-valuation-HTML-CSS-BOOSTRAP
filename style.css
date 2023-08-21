@@ -88,7 +88,11 @@ header {
   top: 2px;
 }
 
+<<<<<<< HEAD
 x.containerMain {
+=======
+.containerMain {
+>>>>>>> b86ca1096294adbb67e403561c2f1ddcda8b1a1a
   height: auto;
   width: 100vw;
 }
@@ -128,7 +132,11 @@ x.containerMain {
   position: absolute;
   background-color: rgb(255, 255, 255);
   color: #070b32;
+<<<<<<< HEAD
   min-height: 200px;
+=======
+  min-height: 150px;
+>>>>>>> b86ca1096294adbb67e403561c2f1ddcda8b1a1a
   z-index: 2;
   padding: 10px;
   bottom: 0;
@@ -186,11 +194,10 @@ x.containerMain {
   position: relative;
   background-color: #257572;
   color: #fff;
-  background-image: url(asset/img/patterns/green-dust-and-scratches.png);
   border-radius: 3px;
   padding: 3rem;
   grid-area: newContent;
-  margin-top: 40px;
+  margin-top: 40p;
 }
 
 .gridTags {
@@ -208,6 +215,10 @@ x.containerMain {
   margin-bottom: 0.6em;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.keyword {
+  width: 90px;
 }
 
 .tag {
@@ -292,7 +303,9 @@ footer {
   align-items: center;
   flex-direction: column;
   padding-top: 40px;
-  margin-top: 80px;
+}
+footer .divFooter {
+  width: 100vw;
 }
 footer .divFooter {
   width: 100vw;
