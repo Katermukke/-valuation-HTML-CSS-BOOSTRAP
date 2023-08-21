@@ -178,11 +178,19 @@ input[type="submit"]:hover {
 // FOOTER
 
 footer {
-  height: 250px;
+  height: auto;
   color: #fff;
   background-color: #070b32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding-top: 40px;
   margin-top: 80px;
+
+  .divFooter {
+    width: 100vw;
+  }
 
   .zeroWasteFrance {
     width: 33%;
@@ -214,6 +222,27 @@ footer {
   .newsletterFooter > p {
     width: 240px;
   }
+
+  .conception {
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 100vw;
+    height: 30px;
+  }
+
+  .conception > p {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+
+  .conception > p > a {
+    text-decoration: none;
+    color: #e2bb2e;
+  }
 }
 
 footer > div {
@@ -222,7 +251,7 @@ footer > div {
   width: 200px;
 }
 
-footer > div > .footerTitle {
+footer > div > div > .footerTitle {
   border-bottom-color: rgb(223, 234, 237);
   border-bottom: 4px solid #dfeaed;
   border-top: 4px solid;
@@ -264,5 +293,16 @@ footer > div > .footerTitle {
   .title-container-header {
     width: 320px;
     margin-bottom: 20px;
+  }
+
+  .divFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    div {
+      margin-bottom: 20px;
+    }
   }
 }
