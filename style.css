@@ -31,7 +31,10 @@ header {
 }
 
 .row {
-  width: 200px;
+  width: 130px;
+}
+.row button {
+  width: 100%;
 }
 
 .logoFoodWaste {
@@ -49,7 +52,6 @@ header {
   height: 40px;
   color: rgb(0, 0, 0);
   border-radius: 5px;
-  padding: 10px px;
   font-family: "Norms", sans-serif;
   background: transparent;
   cursor: pointer;
@@ -58,6 +60,36 @@ header {
   display: inline-block;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
+}
+.custom-btn.btn-14 {
+  background: #d4f7bd;
+  border: solid 0.1rem #57b01c;
+  color: #57b01c;
+  border-radius: 7px;
+  z-index: 1;
+}
+.custom-btn.btn-14:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #57b01c;
+  border-radius: 5px;
+  box-shadow: inset 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.custom-btn.btn-14:hover {
+  color: #fff;
+}
+.custom-btn.btn-14:hover:after {
+  left: 0;
+  width: 100%;
+}
+.custom-btn.btn-14:active {
+  top: 2px;
 }
 .custom-btn.btn-15 {
   background: #d4f7bd;
@@ -88,11 +120,7 @@ header {
   top: 2px;
 }
 
-<<<<<<< HEAD
-x.containerMain {
-=======
 .containerMain {
->>>>>>> b86ca1096294adbb67e403561c2f1ddcda8b1a1a
   height: auto;
   width: 100vw;
 }
@@ -132,11 +160,8 @@ x.containerMain {
   position: absolute;
   background-color: rgb(255, 255, 255);
   color: #070b32;
-<<<<<<< HEAD
   min-height: 200px;
-=======
   min-height: 150px;
->>>>>>> b86ca1096294adbb67e403561c2f1ddcda8b1a1a
   z-index: 2;
   padding: 10px;
   bottom: 0;
@@ -303,9 +328,7 @@ footer {
   align-items: center;
   flex-direction: column;
   padding-top: 40px;
-}
-footer .divFooter {
-  width: 100vw;
+  margin-top: 80px;
 }
 footer .divFooter {
   width: 100vw;
@@ -386,9 +409,6 @@ footer > div > div > .footerTitle {
   }
   .logoFoodWaste {
     padding: 0;
-  }
-  .btn {
-    width: 250px;
   }
   .paragraphContainerHeader {
     width: 320px;

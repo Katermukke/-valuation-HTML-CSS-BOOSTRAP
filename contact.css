@@ -26,7 +26,10 @@ header {
 }
 
 .row {
-  width: 200px;
+  width: 130px;
+}
+.row button {
+  width: 100%;
 }
 
 .logoFoodWaste {
@@ -43,7 +46,6 @@ header {
   height: 40px;
   color: rgb(0, 0, 0);
   border-radius: 5px;
-  padding: 10px 25px;
   font-family: "Norms", sans-serif;
   font-weight: 800;
   background: transparent;
@@ -53,6 +55,36 @@ header {
   display: inline-block;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
+}
+.custom-btn.btn-14 {
+  background: #d4f7bd;
+  border: solid 0.1rem #57b01c;
+  color: #57b01c;
+  border-radius: 7px;
+  z-index: 1;
+}
+.custom-btn.btn-14:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #57b01c;
+  border-radius: 5px;
+  box-shadow: inset 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.custom-btn.btn-14:hover {
+  color: #fff;
+}
+.custom-btn.btn-14:hover:after {
+  left: 0;
+  width: 100%;
+}
+.custom-btn.btn-14:active {
+  top: 2px;
 }
 .custom-btn.btn-15 {
   background: #d4f7bd;
@@ -121,30 +153,32 @@ input[type=submit]:hover {
 .formulaire {
   box-sizing: border-box;
   border-radius: 5px;
-  background-color: #193f00;
+  background-color: #d4f7bd;
   padding: 20px;
-  width: 100%;
+  width: 90%;
   max-width: 440px;
-  margin: 0 auto;
+  margin: auto;
   margin-top: 100px;
+  color: #000000;
 }
 .formulaire .titleForm {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .formulaire h1 {
   border-bottom-color: rgb(223, 234, 237);
-  border-bottom: 4px solid #dfeaed;
+  border-bottom: 4px solid;
   border-top: 4px solid;
   display: inline-block;
+  text-align: center;
   padding-bottom: 0.2em;
   padding-top: 0.2em;
   margin-bottom: 0.6em;
   font-weight: 900;
   text-transform: uppercase;
   font-size: 18px;
-  color: #fff;
   width: 58%;
   display: flex;
   justify-content: center;
@@ -155,8 +189,12 @@ input[type=submit]:hover {
   justify-content: center;
   align-items: center;
 }
-.formulaire form > .custom-btn {
+.formulaire form label {
+  color: #000000;
+}
+.formulaire form .custom-btn {
   height: 50px;
+  color: #000000;
 }
 
 footer {

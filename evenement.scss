@@ -28,7 +28,11 @@ header {
 }
 
 .row {
-  width: 200px;
+  width: 130px;
+
+  button {
+    width: 100%;
+  }
 }
 
 .logoFoodWaste {
@@ -41,7 +45,6 @@ header {
   height: 40px;
   color: rgb(0, 0, 0);
   border-radius: 5px;
-  padding: 10px 25px;
   font-family: "Norms", sans-serif;
   font-weight: 800;
   background: transparent;
@@ -52,6 +55,43 @@ header {
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
+
+  // 14
+  &.btn-14 {
+    background: #d4f7bd;
+    border: solid 0.1rem #57b01c;
+    color: #57b01c;
+    border-radius: 7px;
+    z-index: 1;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background-color: #57b01c;
+      border-radius: 5px;
+      box-shadow: inset 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      color: #fff;
+
+      &:after {
+        left: 0;
+        width: 100%;
+      }
+    }
+
+    &:active {
+      top: 2px;
+    }
+  }
 
   // 15
   &.btn-15 {

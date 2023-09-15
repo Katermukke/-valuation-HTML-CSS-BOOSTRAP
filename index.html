@@ -26,22 +26,14 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-<<<<<<< HEAD
-    <script src="script.js"></script>
-=======
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="style.css" />
->>>>>>> b86ca1096294adbb67e403561c2f1ddcda8b1a1a
     <title>Accueil</title>
   </head>
+
   <body id="home">
     <!-- HEADER -->
 
@@ -49,12 +41,13 @@
       <nav class="navbar navbar-expand-md shadow p-3 mb-5 px-3">
         <div class="row-md"></div>
 
-        <img
-          class="logoFoodWaste ps-1"
-          id="home"
-          src="assets/img/foodWaste_logo.png"
-          alt="logo2"
-        />
+        <a href="index.html#acceuil"
+          ><img
+            class="logoFoodWaste ps-1"
+            id="home"
+            src="assets/img/foodWaste_logo.png"
+            alt="logo2"
+        /></a>
 
         <button
           class="navbar-toggler"
@@ -67,10 +60,16 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav d-flex align-items-center ms-auto ms-2 mb-lg-0">
+        <div
+          class="collapse navbar-collapse d-flex justify-content-end align-items-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav d-flex align-items-center mb-lg-0 me-5">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html#acceuil"
                 >Accueil</a
               >
             </li>
@@ -81,10 +80,10 @@
               <a class="nav-link" href="contact.html#contact">Contact</a>
             </li>
           </ul>
-          <div class="row px-5">
-            <button class="btn btn-outline-success" type="submit">
-              Donation
-            </button>
+          <div class="row me-5">
+            <a href="#nousSoutenir">
+              <button class="custom-btn btn-14" type="submit">Donation</button>
+            </a>
           </div>
         </div>
       </nav>
@@ -233,7 +232,7 @@
           </div>
         </div>
       </section>
-      <section class="sectionNousSoutenir">
+      <section id="nousSoutenir" class="sectionNousSoutenir">
         <div class="nousSoutenir d-flex">
           <div class="aPropos w-100 w-md-50 text-center text-md-start ps-4">
             <h3 class="h3aPropos pb-3">Nous soutenir</h3>
@@ -266,12 +265,7 @@
     </main>
 
     <!-- FOOTER -->
-
-<<<<<<< HEAD
     <footer class="d-flex">
-=======
-    <footer>
->>>>>>> b86ca1096294adbb67e403561c2f1ddcda8b1a1a
       <div class="divFooter">
         <div class="zeroWasteFrance">
           <p class="footerTitle">Zero Waste France</p>
